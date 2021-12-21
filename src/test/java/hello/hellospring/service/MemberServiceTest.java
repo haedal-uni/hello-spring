@@ -13,9 +13,10 @@ class MemberServiceTest {
 
     //회원가입하려면 Service가 있어야한다.
     MemberService memberService;
+
    // test 코드를 clear하기 위해 작성
     MemoryMemberRepository memberRepository;
-
+    
     @BeforeEach // 동작하기 전에 넣어준다.
     public void beforeEach() { // test 실행 할 때 마다 아래 코드 각각 생성
         memberRepository = new MemoryMemberRepository();
