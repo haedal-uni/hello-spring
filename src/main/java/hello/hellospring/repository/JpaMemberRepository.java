@@ -14,9 +14,10 @@ public class JpaMemberRepository implements MemberRepository {
     }
 
     public Member save(Member member) {
-        em.persist(member); //persist : 지속하다.
+        em.persist(member); //persist : 지속하다.(영구 저장하다.)
         return member;
     }
+
     public Optional<Member> findById(Long id) {
         Member member = em.find(Member.class, id); // 조회 (조회할 타입, 식별자 pk값)
         return Optional.ofNullable(member);
