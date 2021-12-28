@@ -39,10 +39,10 @@ class MemberServiceIntegrationTest {
     public void 중복_회원_예외() throws Exception {
         //Given
         Member member1 = new Member();
-        member1.setName("spring");
+        member1.setName("spring1");
 
         Member member2 = new Member();
-        member2.setName("spring");
+        member2.setName("spring1");
 
         //When
         memberService.join(member1);
